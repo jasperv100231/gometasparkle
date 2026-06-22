@@ -1,4 +1,4 @@
-# compactor-bbf4d0
+# compactor-0fcb32
 
 A Python compactor utility.
 
