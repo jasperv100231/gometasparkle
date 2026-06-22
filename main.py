@@ -1,7 +1,7 @@
-"""compactor_0fcb32 - Resource manager."""
+"""compactor_54062a - Resource manager."""
 from contextlib import contextmanager
 import time, json
-RESOURCE_ID = "compactor_0fcb32"
+RESOURCE_ID = "compactor_54062a"
 @contextmanager
 def managed_resource(name: str):
     start = time.time()
